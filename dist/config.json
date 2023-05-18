@@ -3,12 +3,16 @@
   "username": "sonah5009",
   "name": "sonah5009",
   "userimg": "https://avatars.githubusercontent.com/u/95205446?v=4",
-  "sort": "created",
-  "order": "asc",
-  "includeFork": false,
+  "sort": "updated",
+  "order": "desc",
+  "includeFork": true,
   "theme": "dark.css",
   "types": [
-   "all"
-  ]
+   "owner"
+  ],
+  "linkedin": "suna-choe-6a567826b",
+  "twitter": "sonah5009",
+  "medium": null,
+  "dribbble": null
  }
 ]
