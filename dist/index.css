@@ -280,6 +280,12 @@ body {
   font-size: 16px;
 }
 
+#content {
+  margin: 2vh 0px;
+  padding: 4vh 0px !important;
+  /* background-color: rgb(13, 47, 71); */
+}
+
 #work {
   margin: 2vh 0px;
   padding: 4vh 0px !important;
@@ -561,6 +567,7 @@ body {
       rgba(10, 10, 10, 0.6)
     ),
     url("https://images.unsplash.com/photo-1540198163009-7afda7da2945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fFNQQUNFfGVufDB8fDB8fHwy&auto=format&fit=crop&w=800&q=60") center center fixed;
+
   --height: 50vh;
 }
 
