@@ -9,9 +9,9 @@ on:
 
 jobs:
   echo:
-  runs-on: ubuntu-22.04
-  steps:
-    - run: echo 'Test, Github Action'
+    runs-on: ubuntu-22.04
+    steps:
+      - run: echo 'Test, Github Action'
   build:
     runs-on: ubuntu-latest
     steps:
