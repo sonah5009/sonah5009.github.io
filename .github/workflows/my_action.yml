@@ -2,7 +2,7 @@
 # For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
 
 # workflow 의 이름
-name: Node.js Package
+name: my_action workflow
 
 on:
   push:
@@ -22,10 +22,14 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       # This step checks out a copy of your repository  
+      # 소유자는 actions/ 저장소 이름은 checkout @ 사용 가능한 최신 버전은 v3
       - uses: actions/checkout@v3
+      # 소유자는 actions/ 저장소 이름은 setup-node @ 사용 가능한 최신 버전은 v3
       - uses: actions/setup-node@v3
 
+      # gitfolio 설치 후,
+      # 웹사이트를 빌드할 수 있는 지 확인
       - name: install dependencies
         run: |
-          npm i gitfolio -g
+          npm i gitfolio -g 
           gitfolio build sonah5009
