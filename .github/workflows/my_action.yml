@@ -29,5 +29,3 @@ jobs:
         run: |
           npm i gitfolio -g
           gitfolio build sonah5009
-      - name: Test with gitfolio run
-      - run:  gitfolio run -p 3000
