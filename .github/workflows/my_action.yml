@@ -1,21 +1,33 @@
 # This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
 # For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
 
+# workflow 의 이름
 name: Node.js Package
 
 on:
   push:
     branches: [ "main" ]
 
+# 워크플로우의 메인 컴포넌트
+# 여러 개의 스텝들을 포함한다.
 jobs:
   echo:
+    # 머신의 목적지
     runs-on: ubuntu-22.04
+    # tasks들을 포함한다
     steps:
       - run: echo 'Test, Github Action'
+
   build:
     runs-on: ubuntu-22.04
     steps:
+      # This step checks out a copy of your repository  
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-      - run: npm i gitfolio -g
-      - run: gitfolio run -p 3000
+
+      - name: install dependencies
+        run: |
+          npm i gitfolio -g
+          gitfolio build sonah5009
+      - name: Test with gitfolio run
+      - run:  gitfolio run -p 3000
