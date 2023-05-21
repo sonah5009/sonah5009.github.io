@@ -4,4 +4,4 @@ jobs:
   echo:
     runs-on: ubuntu-22.04
     steps:
-      - run: echo 'Hello, GitHub Actions!'
+      - run: echo 'Check, Action workflow'
