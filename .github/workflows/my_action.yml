@@ -30,6 +30,12 @@ jobs:
         run: |
           npm i gitfolio -g 
           gitfolio build sonah5009
+  job_id:
+    # Add "id-token" with the intended permissions.
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+
 
   
   deploy:
